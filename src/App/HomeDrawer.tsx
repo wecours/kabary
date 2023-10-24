@@ -10,10 +10,11 @@ import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
+import Home from './Home';
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
 
-export default function AppDrawer() {
+export default function HomeDrawer() {
   const [state, setState] = React.useState({
     top: false,
     left: false,
@@ -72,9 +73,13 @@ export default function AppDrawer() {
 
   return (
     <div>
-      {(['left', 'right', 'top', 'bottom'] as const).map((anchor) => (
+        {/* , 'right', 'top', 'bottom' */}
+      {(['left'] as const).map((anchor) => (
         <React.Fragment key={anchor}>
           <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
+          
+          <Home />
+
           <Drawer
             anchor={anchor}
             open={state[anchor]}
