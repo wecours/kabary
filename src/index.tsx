@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import reportWebVitals from './reportWebVitals';
-import HomeDrawer from './App/HomeDrawer';
+import HomeDrawer from './Home/HomeDrawer';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement

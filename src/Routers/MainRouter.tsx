@@ -1,6 +1,6 @@
 import { createBrowserRouter } from "react-router-dom";
 import Ohabolana from '../Ohabolana/Ohabolana';
-import Home from "../App/Home";
+import Home from "../Home/Home";
 
 const mainRoute = createBrowserRouter([
     {
