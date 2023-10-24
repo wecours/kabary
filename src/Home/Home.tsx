@@ -1,5 +1,5 @@
 import React from 'react';
-import MediaCard from '../Components/MediaCard';
+import MediaCard from '../Components/MediaCard/MediaCard';
 
 export default function Home() {
   return (

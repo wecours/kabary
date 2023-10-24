@@ -12,6 +12,7 @@ import InboxIcon from '@mui/icons-material/MoveToInbox';
 import MailIcon from '@mui/icons-material/Mail';
 import { RouterProvider } from 'react-router-dom';
 import mainRoute from '../Routers/MainRouter';
+import SpeedDialWCB from '../Components/SpeedDial/SpeedDial';
 
 type Anchor = 'top' | 'left' | 'bottom' | 'right';
 
@@ -80,6 +81,8 @@ export default function HomeDrawer() {
           <Button onClick={toggleDrawer(anchor, true)}>{anchor}</Button>
           
           <RouterProvider router={mainRoute} />
+
+          <SpeedDialWCB />
 
           <Drawer
             anchor={anchor}
