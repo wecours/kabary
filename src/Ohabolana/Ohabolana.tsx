@@ -9,11 +9,11 @@ function Ohabolana() {
     <div className="Ohabolana">
       <header className="App-header">
         
-      <Box sx={{ width: '100%', maxWidth: 500 }}>
-        <Typography variant="h1" gutterBottom>
-          Ohabolana
-        </Typography>
-      </Box>
+        <Box sx={{ width: '100%', maxWidth: 500 }}>
+          <Typography variant="h1" gutterBottom>
+            Ohabolana
+          </Typography>
+        </Box>
 
         <AutocompleteSearch
         />
