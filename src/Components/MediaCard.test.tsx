@@ -7,6 +7,7 @@ test('renders learn react link', () => {
     <MediaCard 
         title={"Kabary"} 
         image={"https://i.ytimg.com/vi/nEhLS_XTFMQ/maxresdefault.jpg"}
+        openUrl={"/kabary"}
         shortDesc={"Lizards are a widespread group of squamate reptiles, with over 6,000 species, ranging across all continents except Antarctica"}
       />
   );

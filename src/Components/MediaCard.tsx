@@ -10,6 +10,7 @@ interface Props {
     title: string;
     image: string;
     shortDesc: string;
+    openUrl: string;
 }
 
 export default function MediaCard(props: Props) {
@@ -30,7 +31,7 @@ export default function MediaCard(props: Props) {
       </CardContent>
       <CardActions>
         <Button size="small">Share</Button>
-        <Button size="small">Learn More</Button>
+        <Button size="small" href={props.openUrl}>Ouvrir</Button>
       </CardActions>
     </Card>
   );
